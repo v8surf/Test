@@ -1,15 +1,4 @@
 
-#include <avr/wdt.h>
-#include <SPI.h>
-#include <Ethernet.h>
-#include <MemoryFree.h>
-//#include "../libraries/Twitter/Twitter.h"
-//#include "../Lib/Twitter/Twitter.h"
-//#include "libraries/Twitter/Twitter.h"
-//#include <../libraries/Twitter/Twitter.h>
-//#include <Twitter.h>
-//#include "libraries/Twitter/Twitter.h"
-#include <SD.h>
 
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 byte ip[] =  { 172,16,1,50 };
@@ -35,17 +24,6 @@ int windDirectionArray[chartArrayLength];
 int temperatureArray[chartArrayLength];
 int humidityArray[chartArrayLength];
 
-/////////////////////////
-// tweeting data //
-/////////////////////////
-//
-//	http://tronixstuff.com/2013/12/04/arduino-tutorials-chapter-30-twitter/
-//
-//	twitter account:	whangaWeather				whangaWeather1
-//	twitter email:		whangaweather@gmail.com		whangaWeather1
-//
-//	token:	2731324705-EJUAaNL54E3TX09JRZUvwqaQwur3hOqZWq3wtDk
-Twitter twitter("2731324705-EJUAaNL54E3TX09JRZUvwqaQwur3hOqZWq3wtDk");
 //
 
 /////////////////
